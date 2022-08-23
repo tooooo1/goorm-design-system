@@ -1,4 +1,11 @@
-import { Alert, Badge, GoormLoader, Spinner } from "@goorm-dev/gds-goormthon";
+import {
+  Alert,
+  Badge,
+  GoormLoader,
+  Spinner,
+  Status,
+  TopBanner,
+} from "@goorm-dev/gds-goormthon";
 import styled from "styled-components";
 
 const lottieProps = {
@@ -16,6 +23,8 @@ const App = () => {
       <GoormLoader lottieProps={lottieProps} />
       <Spinner />
       <CustomSpinner />
+      <Status label="STATUS" color="#000" />
+      <TopBanner />
     </>
   );
 };
