@@ -1,4 +1,5 @@
-import { Alert, Badge, GoormLoader } from "@goorm-dev/gds-goormthon";
+import { Alert, Badge, GoormLoader, Spinner } from "@goorm-dev/gds-goormthon";
+import styled from "styled-components";
 
 const lottieProps = {
   play: true,
@@ -13,8 +14,15 @@ const App = () => {
         click if you like."
       </Alert>
       <GoormLoader lottieProps={lottieProps} />
+      <Spinner />
+      <CustomSpinner />
     </>
   );
 };
 
 export default App;
+
+const CustomSpinner = styled(Spinner)`
+  width: 20rem;
+  height: 20rem;
+`;
